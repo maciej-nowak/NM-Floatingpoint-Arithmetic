@@ -680,26 +680,26 @@ int main()
 
     while(true)
     {
-        cout<<"Program obsluguje 3 podstawowe dzialania na arytmetyce zmiennopozycyjnej fl16"<<endl<<"Zakres podawanych liczb -14 : 15"<<endl;
-        cout<<"PODAJ LICZBY: A i B"<<endl;
+        cout<<"The program supports adding and multiplication (division still not finished) activities on floating point arithmetic fl16"<<endl<<"Range of numbers supplied -14 : 15"<<endl;
+        cout<<"GIVE NUMBERS: A i B"<<endl;
         cin>>doubleA>>doubleB;
         system("CLS");
 
         stringA = changeToString(doubleA);
-        cout<<"WEJSCIE: "<<doubleA<<endl;
-        cout<<"ARYTMETYKA: "<<stringA<<endl;
+        cout<<"INPUT: "<<doubleA<<endl;
+        cout<<"ARITHMETIC: "<<stringA<<endl;
         doubleA = changeToDouble(stringA);
-        cout<<"WYJSCIE: "<<doubleA<<endl<<endl;
+        cout<<"OUTPUT: "<<doubleA<<endl<<endl;
 
         stringB = changeToString(doubleB);
-        cout<<"WEJSCIE: "<<doubleB<<endl;
-        cout<<"ARYTMETYKA: "<<stringB<<endl;
+        cout<<"INPUT: "<<doubleB<<endl;
+        cout<<"ARITHMETIC: "<<stringB<<endl;
         doubleB = changeToDouble(stringB);
-        cout<<"WYJSCIE: "<<doubleB<<endl<<endl;
+        cout<<"OUTPUT: "<<doubleB<<endl<<endl;
 
-        cout<<"DODAWANIE: "<<add(stringA, stringB)<<endl;
-        cout<<"MNOZENIE: "<<mul(stringA, stringB)<<endl;
-    //cout<<"DZIELENIE: "<<div(stringA, stringB)<<endl;
+        cout<<"ADDING: "<<add(stringA, stringB)<<endl;
+        cout<<"MULTIPLICATION: "<<mul(stringA, stringB)<<endl;
+    	//cout<<"DIVISION: "<<div(stringA, stringB)<<endl;
     }
 
     return 0;
